@@ -12,5 +12,5 @@ Requirements: [Astra](https://astra.arkforge.net/docs/latest/getting_started.htm
 ```
 git clone https://github.com/Charmunks/advent-of-code-2025-lua/
 cd dirname # the name of the solutions folder
-astra export-bundle
+astra export-bundle # optional, needed for IntelliSense/editor autocomplete
 astra run main.lua
