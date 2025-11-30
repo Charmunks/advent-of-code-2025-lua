@@ -7,7 +7,7 @@ Each solution will have its own folder in the repo
 
 ## Running my solutions
 
-Requirements: [Astra](https://astra.arkforge.net/docs/latest/getting_started.html)
+Requirements: [Astra](https://astra.arkforge.net/docs/latest/getting_started.html) lua runtime
 
 ```
 git clone https://github.com/Charmunks/advent-of-code-2025-lua/
