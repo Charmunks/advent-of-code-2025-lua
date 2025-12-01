@@ -9,8 +9,9 @@ Each solution will have its own folder in the repo
 
 Requirements: [Astra](https://astra.arkforge.net/docs/latest/getting_started.html) lua runtime
 
-```
+```bash
 git clone https://github.com/Charmunks/advent-of-code-2025-lua/
 cd dirname # the name of the solutions folder
 astra export-bundle # optional, needed for IntelliSense/editor autocomplete
 astra run main.lua
+```
