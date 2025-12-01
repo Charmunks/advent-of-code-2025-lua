@@ -1,5 +1,7 @@
 # Astra
 **/astra/
+**/tlconfig.lua
+**/.luarc.json
 
 # luarocks build files
 *.src.rock
