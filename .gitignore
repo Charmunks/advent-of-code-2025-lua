@@ -1,6 +1,5 @@
 # Astra
-astra/
-*/astra/
+**/astra/
 
 # luarocks build files
 *.src.rock
