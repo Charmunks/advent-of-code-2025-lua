@@ -7,3 +7,6 @@
 *.src.rock
 *.zip
 *.tar.gz
+
+# aoc
+**/input.txt

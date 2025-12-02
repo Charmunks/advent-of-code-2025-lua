@@ -16,6 +16,17 @@ astra export-bundle # optional, needed for IntelliSense/editor autocomplete
 astra run main.lua
 ```
 
+## Utils
+
+As I go, I will be writing up util functions for common things I need to do, in attempt to complete solutions faster. The most recent util file will be located at /template/utils.lua.
+
+Current utils:
+- parseFile(path): converts input txt file into an array, with each space seperated string in the input file being a value
+- parseFileChar(path): converts input txt file into an array, with each character in the input file being a value
+- checkMatch(value, array): checks if an array contains a value
+- checkNumber(value): checks if value is a number
+- checkAdj(startIndex, array, rowSize, compare): Checks if a value is adjacent to an index in a table/sheet. Includes diagonals. Think word searches 
+
 ## Solution 1 ([/01](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/01))
 
 My first advent of code solution! This one took me 40 minutes to complete. To be honest, I had literally no idea what I was doing. My first mistake was testing using my inputs instead of the sample, so I had to use the sites checker to verify my solution, which was rate limited. What I should have done, was use the sample so I could instantly verify my solution. I also didn't read the question carefully enough, and I spent a lot of time trying to figure out what the question was asking. I should have read the question carefully and then read the sample input and output to understand what the question was asking and exact values (ie I used 100 and not 99 for the overflow)
