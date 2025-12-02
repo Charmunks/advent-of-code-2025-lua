@@ -26,6 +26,13 @@ Current utils:
 - checkMatch(value, array): checks if an array contains a value
 - checkNumber(value): checks if value is a number
 - checkAdj(startIndex, array, rowSize, compare): Checks if a value is adjacent to an index in a table/sheet. Includes diagonals. Think word searches 
+- parseNum(path) converts input txt file into an array, extracting each number
+
+## Solution 2 ([/02](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/02))
+
+The puzzle can be found [here](https://adventofcode.com/2025/day/2). This was a mess. At first, I completely misunderstood the question, but was able to figure it out eventually. This lost me 16 minutes though. After I figured out what it meant, implementing the functionality was fairly simple, using a lua repeat loop. In the end, it took me 23 minutes to complete part 1, but subtracting the 16 minute misunderstanding, it took me 7 minutes.
+
+Now part 2 is where this really falls apart. Within 10 minutes I got something working on the samples, using a bunch of for loops, but it just was not working on my inputs. I spent more then 20 minutes troubleshooting, and in the end gave up (I'm doing these at midnight my time, I am tired) and looked at someone elses solution for the general logic. Now, it was a different lang so I did have to figure out how to implement it in lua, but I still feel disappointed I was not able to figure it out myself.
 
 ## Solution 1 ([/01](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/01))
 

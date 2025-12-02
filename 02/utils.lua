@@ -81,4 +81,19 @@ function utils.checkAdj(startIndex, array, rowSize, compare)
     return false
 end
 
+function utils.parseNum(path)
+    local file = assert(io.open(path, "r"))
+    local content = file:read("*a")  -- read entire file
+    file:close()
+
+    local results = {}
+
+    -- extract every number (works for ranges, commas, newlines, etc.)
+    for num in content:gmatch("%d+") do
+        results[#results+1] = tonumber(num)
+    end
+
+    return results
+end
+
 return utils
