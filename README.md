@@ -27,6 +27,8 @@ Current utils:
 - checkNumber(value): checks if value is a number
 - checkAdj(startIndex, array, rowSize, compare): Checks if a value is adjacent to an index in a table/sheet. Includes diagonals. Think word searches 
 - parseNum(path) converts input txt file into an array, extracting each number
+- isRepeatingPattern(string): Checks if a string is made up of a repeating pattern
+
 
 ## Solution 2 ([/02](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/02))
 
