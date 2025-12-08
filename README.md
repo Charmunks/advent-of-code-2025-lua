@@ -1,4 +1,5 @@
 # Ivie's Lua Advent of Code 2025 Solutions
+
 This will be the home for my solutions to Advent of Code 2025
 
 Every solution will be written in lua, using the [Astra](https://astra.arkforge.net/) lua framework.
@@ -29,6 +30,9 @@ Current utils:
 - parseNum(path) converts input txt file into an array, extracting each number
 - isRepeatingPattern(string): Checks if a string is made up of a repeating pattern
 
+## Solution 3 ([/03](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/03))
+
+The puzzle can be found [here](https://adventofcode.com/2025/day/2). This one actually went well! I was able to solve it fairly easily.
 
 ## Solution 2 ([/02](https://github.com/Charmunks/advent-of-code-2025-lua/tree/main/02))
 

@@ -1,9 +1,11 @@
 local utils = require("utils")
-local input = utils.parseFileChars("samples.txt")
-local tableSize = 15
+local input = utils.parseFileChars("input.txt")
+local tableSize = 100
 local banks = #input / tableSize 
-local count = 0
+local total = 0
 index = 0
+local answers = {}
+
 
 local function findIndex(val, array)
     for i = 1, #array do
@@ -11,6 +13,10 @@ local function findIndex(val, array)
             return i
         end    
     end       
+end
+
+local function remNL(str)
+    return str:gsub("[\r\n]+", "")
 end
 
 local function sort(array, j)
@@ -21,11 +27,9 @@ local function sort(array, j)
     end
     table.sort(array, function(a, b) return a > b end)
 
-    for i = 1, left do
+    for i = 1, left + 1 do
         local indexed = findIndex(array[i], arrayOg)
-        if i == 1 then
-        end
-        if array[i+indexed] ~= nil then
+        if array[left+indexed] ~= nil or left == 0 then
             index = index + indexed
             return array[i]
         end
@@ -34,6 +38,8 @@ local function sort(array, j)
 end
 
 for i = 0, banks - 1 do
+answers[i+1] = {}
+index = 0
 local bankvals = {}
 startCount = i * tableSize + 1 
 if i == 0 then
@@ -43,20 +49,24 @@ for e = startCount, startCount + tableSize - 1 do
     table.insert(bankvals, input[e])
 end
 
+
 vals = {}
 for j = 1, 12 do
     local setVals = {}
     for e = index + 1, tableSize do
     table.insert(setVals, bankvals[e])
     end
-    if i == 1 then
-    print("h"..sort(setVals, j))
-    end
+    table.insert(answers[i+1], sort(setVals, j))
+
 end
 end
 
 
+for i = 1, #answers do
+    local count = tonumber(table.concat(answers[i]))
+    total = total + count
+end
+
+pprint(total)
 
 
-
--- i give up :( no solving ts one for me)
